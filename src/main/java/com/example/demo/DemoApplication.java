@@ -15,6 +15,27 @@ public class DemoApplication {
 
     @GetMapping("/")
     public String home() {
-        return "Hello from Java!";
+        return """
+            <html>
+<head>
+<style>
+               body {
+                   background-color: lightblue;
+                   text-align: center;
+                   padding-top: 100px;
+                   font-family: Arial, sans-serif;
+               }
+               h1 {
+                   background-color: white;
+                   padding: 20px;
+                   border-radius: 10px;
+               }
+</style>
+</head>
+<body>
+<h1>Hello from Java!</h1>
+</body>
+</html>
+       """;
     }
 }
